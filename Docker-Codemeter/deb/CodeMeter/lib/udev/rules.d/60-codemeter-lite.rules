@@ -1,0 +1,69 @@
+# CodeMeter udev rule
+
+# this rule trigger an add/remove hotplug event to the CodeMeterLin daemon
+SUBSYSTEM=="usb", ENV{PRODUCT}=="64f/3e9/*",  GOTO="codemeter_noflash"
+SUBSYSTEM=="usb", ENV{PRODUCT}=="64f/4f9/*",  GOTO="codemeter_noflash"
+SUBSYSTEM=="usb", ENV{PRODUCT}=="64f/3f2/*",  GOTO="codemeter_noflash"
+SUBSYSTEM=="usb", ENV{PRODUCT}=="64f/3f3/*",  GOTO="codemeter_noflash"
+SUBSYSTEM=="usb", ENV{PRODUCT}=="64f/3f4/*",  GOTO="codemeter_noflash"
+
+# CmStick
+SUBSYSTEM=="scsi_generic",                      ATTRS{idVendor}=="064f", ATTRS{idProduct}=="03e9", OWNER="daemon"
+SUBSYSTEM=="block",                             ATTRS{idVendor}=="064f", ATTRS{idProduct}=="03e9", GOTO="codemeter_noflash"
+SUBSYSTEM=="block",                           ENV{ID_VENDOR_ID}=="064f", ENV{ID_MODEL_ID}=="03e9", GOTO="codemeter_noflash"
+SUBSYSTEM=="scsi_generic",                      ATTRS{idVendor}=="064f", ATTRS{idProduct}=="04f9", OWNER="daemon"
+SUBSYSTEM=="block",                             ATTRS{idVendor}=="064f", ATTRS{idProduct}=="04f9", GOTO="codemeter_noflash"
+SUBSYSTEM=="block",                           ENV{ID_VENDOR_ID}=="064f", ENV{ID_MODEL_ID}=="04f9", GOTO="codemeter_noflash"
+
+# CmStick/M
+SUBSYSTEM=="scsi_generic",                      ATTRS{idVendor}=="064f", ATTRS{idProduct}=="03f2", OWNER="daemon"
+SUBSYSTEM=="block",                             ATTRS{idVendor}=="064f", ATTRS{idProduct}=="03f2", GOTO="codemeter_flash"
+SUBSYSTEM=="block",                           ENV{ID_VENDOR_ID}=="064f", ENV{ID_MODEL_ID}=="03f2", GOTO="codemeter_flash"
+SUBSYSTEM=="scsi_generic",                      ATTRS{idVendor}=="064f", ATTRS{idProduct}=="03f3", OWNER="daemon"
+SUBSYSTEM=="block",                             ATTRS{idVendor}=="064f", ATTRS{idProduct}=="03f3", GOTO="codemeter_flash"
+SUBSYSTEM=="block",                           ENV{ID_VENDOR_ID}=="064f", ENV{ID_MODEL_ID}=="03f3", GOTO="codemeter_flash"
+SUBSYSTEM=="scsi_generic",                      ATTRS{idVendor}=="064f", ATTRS{idProduct}=="03f4", OWNER="daemon"
+SUBSYSTEM=="block",                             ATTRS{idVendor}=="064f", ATTRS{idProduct}=="03f4", GOTO="codemeter_flash"
+SUBSYSTEM=="block",                           ENV{ID_VENDOR_ID}=="064f", ENV{ID_MODEL_ID}=="03f4", GOTO="codemeter_flash"
+
+# CmStick (HID)
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device",   ATTRS{idVendor}=="064f", ATTRS{idProduct}=="2af9", OWNER="daemon"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device",   ATTRS{idVendor}=="064f", ATTRS{idProduct}=="2af9", GOTO="codemeter_hid"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ENV{ID_VENDOR_ID}=="064f", ENV{ID_MODEL_ID}=="2af9", GOTO="codemeter_hid"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device",       ENV{PRODUCT}=="64f/2af9/*",                    GOTO="codemeter_hid"
+
+# CmStick/M3 (Composite)
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device",   ATTRS{idVendor}=="064f", ATTRS{idProduct}=="5213", OWNER="daemon"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device",   ATTRS{idVendor}=="064f", ATTRS{idProduct}=="5213", GOTO="codemeter_hid"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ENV{ID_VENDOR_ID}=="064f", ENV{ID_MODEL_ID}=="5213", GOTO="codemeter_hid"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device",       ENV{PRODUCT}=="64f/5213/*",                    GOTO="codemeter_hid"
+
+# CmStick/M3 (HID)
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device",   ATTRS{idVendor}=="064f", ATTRS{idProduct}=="2b03", OWNER="daemon"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device",   ATTRS{idVendor}=="064f", ATTRS{idProduct}=="2b03", GOTO="codemeter_hid"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ENV{ID_VENDOR_ID}=="064f", ENV{ID_MODEL_ID}=="2b03", GOTO="codemeter_hid"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device",       ENV{PRODUCT}=="64f/2b03/*",                    GOTO="codemeter_hid"
+
+# CmCard
+SUBSYSTEM=="block", KERNEL=="sd*",                                                                 GOTO="codemeter_card"
+SUBSYSTEM=="block", KERNEL=="mmcblk*",                                                             GOTO="codemeter_card"
+
+GOTO="codemeter_end"
+
+LABEL="codemeter_noflash"
+
+# disable automount
+ENV{UDISKS_PRESENTATION_HIDE}="1", ENV{UDISKS_AUTOMOUNT_HINT}="never", ENV{UDISKS_IGNORE}="1"
+
+LABEL="codemeter_flash"
+LABEL="codemeter_card"
+
+# signal the daemon once per stick, not per partition
+ENV{DEVTYPE}!="disk", GOTO="codemeter_end"
+
+LABEL="codemeter_hid"
+
+# signal the daemon, but only if it already has a signal handler set up
+RUN+="/bin/sh -c 'if test -f /tmp/cm_lock; then exec /usr/bin/pkill -USR1 -x CodeMeterLin; fi'"
+
+LABEL="codemeter_end"
