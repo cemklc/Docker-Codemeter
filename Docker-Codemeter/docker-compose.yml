@@ -1,0 +1,86 @@
+version: '3.3'
+services:
+  
+  # codemeter server container, based on customer/server image
+  server:
+    image: customer/server
+    container_name: license_server
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    restart: always
+    volumes:
+      - license_vol:/var/lib/CodeMeter/CmAct
+      - /var/run/docker.sock:/var/run/docker.sock:rw
+    networks:
+      - client_network
+ 
+  # webadmin container, based on customer/server image
+  webadmin:
+    image: customer/server
+    container_name: license_webadmin
+    command: --webadmin
+    depends_on:
+      - server
+    restart: always
+    ports:
+      - "23080:22352"
+      - "23443:22353"
+    # set used codemeter container name to connect.
+    environment:
+      CODEMETER_HOST: license_server
+    networks:
+      - client_network
+  
+  # build license base image 
+  lbase:
+    image: customer/license_base
+    build:
+      context: .
+      dockerfile: Dockerfile.lbase
+  
+  # build application base image 
+  abase:
+    image: customer/app_base
+    build:
+      context: .
+      dockerfile: Dockerfile.abase
+  
+  # create and run license container, which installs all needed licenses.
+  license:
+    image: customer/license
+    build:
+      context: .
+      dockerfile: Dockerfile.license
+    depends_on:
+      - server
+    environment:
+      CODEMETER_HOST: license_server
+    networks:
+      - client_network
+   
+  # run protected application    
+  application:
+    image: customer/go_app
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+    depends_on:
+      - server
+    environment:
+      CODEMETER_HOST: license_server 
+    networks:
+      - client_network
+
+# used named volume to store licenses.
+volumes:
+  license_vol:
+    driver: local
+
+# used named network      
+networks:
+  client_network:
+
+#networks:
+#  customer_customer_net:
+#    external: true      

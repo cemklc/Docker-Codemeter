@@ -1,0 +1,15 @@
+FROM customer/license_base
+
+LABEL description="Customer License image"
+
+# set default CodeMeter Server container name.
+ENV CODEMETER_HOST ""
+
+# set custom cloud license path (if it needs), default is /licenses.
+ENV LICENSE_PATH /licenses
+
+# copy cloud licenses to install.
+COPY data/licenses /licenses
+
+# install licenses by default.
+CMD ["--install"]

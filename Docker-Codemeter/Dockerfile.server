@@ -1,0 +1,46 @@
+FROM  bitnami/minideb:stretch
+
+LABEL description="Customer CodeMeter image"
+
+ARG USE_HTTP_PROXY
+ARG USE_HTTPS_PROXY
+
+# set proxy settings
+ENV http_proxy $USE_HTTP_PROXY
+ENV https_proxy $USE_HTTPS_PROXY
+
+# install needed components
+RUN install_packages libusb-1.0-0 libcurl3 
+
+# copy bin files
+COPY deb/CodeMeter/usr/bin /usr/bin
+COPY deb/CodeMeter/usr/lib /usr/lib
+COPY deb/CodeMeter/usr/sbin /usr/sbin
+
+# set a special .ini file
+COPY data/etc/Server.ini /etc/wibu/CodeMeter/Server.ini
+
+# copy var files
+COPY deb/CodeMeter/var /var
+
+# declare commucation ports
+EXPOSE 22350
+EXPOSE 22351
+EXPOSE 22352
+EXPOSE 22353
+
+# Add anonymous VOLUMEs to efficient store changed data.
+VOLUME  ["/var/log/CodeMeter"]
+
+# Run CodeMeter install command.
+RUN /usr/sbin/CodeMeterLin -x ; exit 0
+
+# Copy control scripts.
+COPY entrypoint.sh /entrypoint.sh
+RUN sed -i 's/\r$//' /entrypoint.sh
+RUN ["chmod", "+x", "/entrypoint.sh"]
+ENTRYPOINT [ "/entrypoint.sh" ]
+
+# Run default command
+CMD ["--server"]
+
