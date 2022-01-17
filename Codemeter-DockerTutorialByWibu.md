@@ -261,7 +261,7 @@ Please note:
 * The `codemeter_network` is used to make sure the CodeMeter libraries can communicate with CodeMeter.
 * If you have multiple apps it might make sense to create a base image for the CodeMeter libraries and use this for all your apps that use CodeMeter.
 
-Finally run `docker-compose up` to build and run everything. You should now see the output of your protected application. Most likely you will see an error that the license is missing.
+Finally run `docker-compose up` to build and run everything. You should now see the output of your protected application.** Most likely you will see an error that the license is missing.**
 
 ## Setup licenses for a standalone CodeMeter container
 
