@@ -1,0 +1,399 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: codemeter
+
+Files: *
+Copyright: 2002-2021 WIBU SYSTEMS AG
+License: WIBU Software License Agreement, Single Use License
+ WIBU-SYSTEMS AG, Karlsruhe, Germany and Wibu-Systems USA Inc., Edmonds, WA,
+ USA
+ Software License Agreement, Single Use License
+ CodeMeter and WibuKey Software
+ .
+ PLEASE READ THIS SOFTWARE LICENSE AGREEMENT ("LICENSE") BEFORE USING THE
+ SOFTWARE.  BY USING THE SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE TERMS
+ OF THIS LICENSE.  IF YOU ARE ACCESSING THE SOFTWARE ELECTRONICALLY, SIGNIFY
+ YOUR AGREEMENT TO BE BOUND BY THE TERMS OF THIS LICENSE BY CLICKING THE
+ "AGREE/ACCEPT" BUTTON. IF YOU DO NOT AGREE TO THE TERMS OF THIS LICENSE,
+ RETURN THE WIBU-SYSTEMS SOFTWARE TO THE PLACE WHERE YOU OBTAINED IT FOR A
+ REFUND OR, IF THE SOFTWARE WAS ACCESSED ELECTRONICALLY, CLICK
+ "DISAGREE/DECLINE".
+ .
+ IMPORTANT NOTE: To the extent this software may be used to reproduce
+ materials, it is licensed to you only for reproduction of materials you are
+ authorized or legally permitted to reproduce.
+ .
+ 1. General.  The software, documentation and any fonts accompanying this
+ License whether on disk, in read only memory, on any other media or in any
+ other form (collectively the "WIBU-SYSTEMS Software") are licensed, not
+ sold, to you by WIBU-SYSTEMS AG ("WIBU-SYSTEMS") for use only under the
+ terms of this License, and WIBU-SYSTEMS reserves all rights not expressly
+ granted to you. The rights granted herein are limited to WIBU-SYSTEMS's and
+ its licensors' intellectual property rights in the WIBU-SYSTEMS Software
+ and do not include any other patents or intellectual property rights. You
+ own the media on which the WIBU-SYSTEMS Software is recorded but
+ WIBU-SYSTEMS and/or WIBU-SYSTEMS's licensor(s) retain ownership of the
+ WIBU-SYSTEMS Software itself.  The rights granted under the terms of this
+ License include any software upgrades that replace and/or supplement the
+ original WIBU-SYSTEMS Software product, unless such upgrade contains a
+ separate license.
+ .
+ 2. Permitted License Uses and Restrictions.  This License allows you to
+ install and use one copy of the WIBU-SYSTEMS Software on multiple computers
+ at a time, if the WIBU-SYSTEMS Software is always used with a WibuKey
+ Hardware, CodeMeter Hardware or a CodeMeterAct License. The software may be
+ used only with firm codes, for which a separate license agreement exists
+ between the licensor and WIBU-SYSTEMS. Other Firm codes, e.g. 10 and 5010,
+ may only be used for internal testing of the licensor. This License does
+ allow the WIBU-SYSTEMS Software to exist on more than one computer at a
+ time, and you may make the WIBU-SYSTEMS Software available over a network
+ where it could be used by multiple computers at the same time under these
+ circumstances. You may make one copy of the WIBU-SYSTEMS Software in
+ machine-readable form for backup purposes only; provided that the backup
+ copy must include all copyright or other proprietary notices contained on
+ the original.  Except as and only to the extent expressly permitted in this
+ License or by applicable law, you may not copy, decompile, reverse
+ engineer, disassemble, modify, or create derivative works of the
+ WIBU-SYSTEMS Software or any part thereof. THE WIBU-SYSTEMS SOFTWARE IS NOT
+ INTENDED FOR USE IN THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT
+ NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL SYSTEMS, LIFE
+ SUPPORT MACHINES OR OTHER EQUIPMENT IN WHICH THE FAILURE OF THE
+ WIBU-SYSTEMS SOFTWARE COULD LEAD TO DEATH, PERSONAL INJURY, OR SEVERE
+ PHYSICAL OR ENVIRONMENTAL DAMAGE.
+ .
+ 3. Transfer.  You may not rent, lease, lend or sublicense the WIBU-SYSTEMS
+ Software.  You may, however, make a one-time permanent transfer of all of
+ your license rights to the WIBU-SYSTEMS Software to another party, provided
+ that: (a) the transfer must include all of the WIBU-SYSTEMS Software,
+ including all its component parts, original media, printed materials and
+ this License; (b) you do not retain any copies of the WIBU-SYSTEMS
+ Software, full or partial, including copies stored on a computer or other
+ storage device; and (c) the party receiving the WIBU-SYSTEMS Software reads
+ and agrees to accept the terms and conditions of this License.  NFR
+ (Not for Resale) Copies: Notwithstanding other sections of this License,
+ WIBU-SYSTEMS Software labeled or otherwise provided to you on a promotional
+ basis may only be used for demonstration, testing and evaluation purposes
+ and may not be resold or transferred.
+ .
+ 4. Termination.  This License is effective until terminated.  Your rights
+ under this License will terminate automatically without notice from
+ WIBU-SYSTEMS if you fail to comply with any term(s) of this License. Upon
+ the termination of this License, you shall cease all use of the
+ WIBU-SYSTEMS Software and destroy all copies, full or partial, of the
+ WIBU-SYSTEMS Software.
+ .
+ 5. Limited Warranty on Media.  WIBU-SYSTEMS warrants the media on which the
+ WIBU-SYSTEMS Software is recorded and delivered by WIBU-SYSTEMS to be free
+ from defects in materials and workmanship under normal use for a period of
+ ninety (90) days from the date of original retail purchase.  Your exclusive
+ remedy under this Section shall be, at WIBU-SYSTEMS’s option, a refund of
+ the purchase price of the product containing the WIBU-SYSTEMS Software or
+ replacement of the WIBU-SYSTEMS Software which is returned to WIBU-SYSTEMS
+ or an WIBU-SYSTEMS authorized representative with a copy of the receipt.
+ THIS LIMITED WARRANTY AND ANY IMPLIED WARRANTIES ON THE MEDIA INCLUDING,
+ BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, OF
+ SATISFACTORY QUALITY, AND OF FITNESS FOR A PARTICULAR PURPOSE, ARE LIMITED
+ IN DURATION TO NINETY (90) DAYS FROM THE DATE OF ORIGINAL RETAIL PURCHASE.
+ SOME JURISDICTIONS DO NOT ALLOW LIMITATIONS ON HOW LONG AN IMPLIED WARRANTY
+ LASTS, SO THE ABOVE LIMITATION MAY NOT APPLY TO YOU.  THE LIMITED WARRANTY
+ SET FORTH HEREIN IS THE ONLY WARRANTY MADE TO YOU AND IS PROVIDED IN LIEU
+ OF ANY OTHER WARRANTIES (IF ANY) CREATED BY ANY DOCUMENTATION OR PACKAGING.
+ THIS LIMITED WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS, AND YOU MAY ALSO
+ HAVE OTHER RIGHTS WHICH VARY BY JURISDICTION.
+ .
+ 6. Disclaimer of Warranties.  YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT USE
+ OF THE WIBU-SYSTEMS SOFTWARE IS AT YOUR SOLE RISK AND THAT THE ENTIRE RISK
+ AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY AND EFFORT IS WITH YOU.
+ EXCEPT FOR THE LIMITED WARRANTY ON MEDIA SET FORTH ABOVE AND TO THE MAXIMUM
+ EXTENT PERMITTED BY APPLICABLE LAW, THE WIBU-SYSTEMS SOFTWARE IS PROVIDED
+ "AS IS", WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND, AND WIBU-SYSTEMS
+ AND WIBU-SYSTEMS'S LICENSORS (COLLECTIVELY REFERRED TO AS "WIBU-SYSTEMS"
+ FOR THE PURPOSES OF SECTIONS 6 AND 7) HEREBY DISCLAIM ALL WARRANTIES AND
+ CONDITIONS WITH RESPECT TO THE WIBU-SYSTEMS SOFTWARE, EITHER EXPRESS,
+ IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ AND/OR CONDITIONS OF MERCHANTABILITY, OF SATISFACTORY QUALITY, OF FITNESS
+ FOR A PARTICULAR PURPOSE, OF ACCURACY, OF QUIET ENJOYMENT, AND
+ NON-INFRINGEMENT OF THIRD PARTY RIGHTS.  WIBU-SYSTEMS DOES NOT WARRANT
+ AGAINST INTERFERENCE WITH YOUR ENJOYMENT OF THE WIBU-SYSTEMS SOFTWARE, THAT
+ THE FUNCTIONS CONTAINED IN THE WIBU-SYSTEMS SOFTWARE WILL MEET YOUR
+ REQUIREMENTS, THAT THE OPERATION OF THE WIBU-SYSTEMS SOFTWARE WILL BE
+ UNINTERRUPTED OR ERROR-FREE, OR THAT DEFECTS IN THE WIBU-SYSTEMS SOFTWARE
+ WILL BE CORRECTED. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY
+ WIBU-SYSTEMS OR AN WIBU-SYSTEMS AUTHORIZED REPRESENTATIVE SHALL CREATE A
+ WARRANTY.  SHOULD THE WIBU-SYSTEMS SOFTWARE PROVE DEFECTIVE, YOU ASSUME THE
+ ENTIRE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.  SOME
+ JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES OR
+ LIMITATIONS ON APPLICABLE STATUTORY RIGHTS OF A CONSUMER, SO THE ABOVE
+ EXCLUSION AND LIMITATIONS MAY NOT APPLY TO YOU.
+ .
+ 7. Limitation of Liability.  TO THE EXTENT NOT PROHIBITED BY LAW, IN NO
+ EVENT SHALL WIBU-SYSTEMS BE LIABLE FOR PERSONAL INJURY, OR ANY INCIDENTAL,
+ SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES WHATSOEVER, INCLUDING, WITHOUT
+ LIMITATION, DAMAGES FOR LOSS OF PROFITS, LOSS OF DATA, BUSINESS
+ INTERRUPTION OR ANY OTHER COMMERCIAL DAMAGES OR LOSSES, ARISING OUT OF OR
+ RELATED TO YOUR USE OR INABILITY TO USE THE WIBU-SYSTEMS SOFTWARE, HOWEVER
+ CAUSED, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT OR OTHERWISE)
+ AND EVEN IF WIBU-SYSTEMS HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+ DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OF LIABILITY FOR
+ PERSONAL INJURY, OR OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS
+ LIMITATION MAY NOT APPLY TO YOU.  In no event shall WIBU-SYSTEMS's total
+ liability to you for all damages (other than as may be required by
+ applicable law in cases involving personal injury) exceed the amount of
+ fifty dollars ($50.00).  The foregoing limitations will apply even if the
+ above stated remedy fails of its essential purpose.
+ .
+ 8. Export Law Assurances.  You may not use or otherwise export or reexport
+ the WIBU-SYSTEMS Software except as authorized by United States law and the
+ laws of the jurisdiction in which the WIBU-SYSTEMS Software was obtained.
+ In particular, but without limitation, the WIBU-SYSTEMS Software may not be
+ exported or re-exported (a) into (or to a national or resident of) any U.S.
+ embargoed countries (currently Cuba, Iran, Iraq, Libya, North Korea, Sudan
+ and Syria) or (b) to anyone on the U.S. Treasury Department's list of
+ Specially Designated Nationals or the U.S. Department of Commerce Denied
+ Person’s List or Entity List.  By using the WIBU-SYSTEMS Software, you
+ represent and warrant that you are not located in, under control of, or a
+ national or resident of any such country or on any such list.
+ .
+ 9. Government End Users.  The WIBU-SYSTEMS Software and related
+ documentation are "Commercial Items", as that term is defined at 48 C.F.R.
+ §2.101, consisting of "Commercial Computer Software" and "Commercial
+ Computer Software Documentation", as such terms are used in 48 C.F.R.
+ §12.212 or 48 C.F.R. §227.7202, as applicable.  Consistent with 48 C.F.R.
+ §12.212 or 48 C.F.R. §227.7202-1through 227.7202-4, as applicable, the
+ Commercial Computer Software and Commercial Computer Software Documentation
+ are being licensed to U.S. Government end users (a) only as Commercial
+ Items and (b) with only those rights as are granted to all other end users
+ pursuant to the terms and conditions herein.  Unpublished-rights reserved
+ under the copyright laws of the United States and Germany.
+ .
+ 10. Controlling Law and Severability.  This License will be governed by
+ and construed in accordance with the laws of Germany (Bundesrepublik
+ Deutschland). This License shall not be governed by the United Nations
+ Convention on Contracts for the International Sale of Goods, the
+ application of which is expressly excluded. If for any reason a court of
+ competent jurisdiction finds any provision, or portion thereof, to be
+ unenforceable, the remainder of this License shall continue in full force
+ and effect.
+ .
+ 11. Complete Agreement; Governing Language.  This License constitutes the
+ entire agreement between the parties with respect to the use of the
+ WIBU-SYSTEMS Software licensed hereunder and supersedes all prior or
+ contemporaneous understandings regarding such subject matter.  No amendment
+ to or modification of this License will be binding unless in writing and
+ signed by WIBU-SYSTEMS. Any translation of this License is done for local
+ requirements and in the event of a dispute between the German and any
+ non-German versions, the German version of this License shall govern.
+ .
+ Karlsruhe, Germany, July 2012
+ .
+ WIBU-SYSTEMS AG, Karlsruhe, Germany und Wibu-Systems USA Inc., Edmonds, WA,
+ USA
+ Softwarelizenzvertrag, Einzelbenutzerlizenz
+ CodeMeter and WibuKey Software
+ .
+ BITTE LESEN SIE DIESEN SOFTWARELIZENZVERTRAG ("LIZENZ") SORGFÄLTIG DURCH,
+ BEVOR SIE DIE SOFTWARE IN BETRIEB NEHMEN. INDEM SIE DIESE SOFTWARE
+ VERWENDEN, ERKLÄREN SIE IHR EINVERSTÄNDNIS MIT DEN BESTIMMUNGEN DES
+ NACHSTEHENDEN LIZENZVERTRAGS. WENN SIE AUF ELEKTRONISCHEM WEGE AUF DIESE
+ SOFTWARE ZUGREIFEN, ERKLÄREN SIE IHR EINVERSTÄNDNIS MIT DEN BESTIMMUNGEN
+ DES NACHSTEHENDEN LIZENZVERTRAGS DURCH KLICKEN IN "AKZEPTIEREN". WENN SIE
+ MIT DEM LIZENZVERTRAG NICHT EINVERSTANDEN SIND, GEBEN SIE DIE WIBU-SYSTEMS
+ SOFTWARE GEGEN RÜCKERSTATTUNG DES KAUFPREISES DORT ZURÜCK, WO SIE SIE
+ ERWORBEN HABEN, ODER WENN SIE DIE SOFTWARE AUF ELEKTRONISCHEM WEGE
+ EMPFANGEN HABEN, KLICKEN SIE IN "ABLEHNEN".
+ .
+ WICHTIGER HINWEIS: Falls diese Software zur Reproduktion von Materialien
+ verwendet werden kann, erteilt Ihnen der Lizenzgeber nur das Recht zur
+ Reproduktion von Materialien, sofern dies rechtlich zulässig ist oder vom
+ Rechtsinhaber gestattet wurde.
+ .
+ 1. Allgemeines.  WIBU-SYSTEMS AG ("WIBU-SYSTEMS") erteilt Ihnen hiermit das
+ Recht zur Benutzung der beigefügten WIBU-SYSTEMS Software einschließlich
+ der Dokumentation und Zeichensätze (im folgenden "WIBU-SYSTEMS Software"),
+ unabhängig davon, ob diese auf einer Diskette, einem ROM oder einem anderen
+ Datenträger gespeichert ist. Ferner behält WIBU-SYSTEMS sich alle Rechte
+ vor, die Ihnen nicht ausdrücklich erteilt werden. Die im Rahmen dieses
+ Vertrags erteilten Lizenzen beschränken sich auf die Urheberrechte von
+ WIBU-SYSTEMS und seiner Lizenzgeber an der WIBU-SYSTEMS Software und
+ schließen keine anderen Patente oder Urheberrechte ein. Lediglich der
+ Datenträger, auf dem sich die WIBU-SYSTEMS Software befindet, geht in Ihr
+ Eigentum über; WIBU-SYSTEMS und/oder der oder die Lizenzgeber von
+ WIBU-SYSTEMS bleiben Inhaber sämtlicher Eigentums- oder sonstiger Rechte an
+ der WIBU-SYSTEMS Software. Die im Rahmen dieser Lizenz gewährten Rechte
+ umfassen jegliche Softwareaktualisierungen, die das Original WIBU-SYSTEMS
+ Softwareprodukt ersetzen und/oder ergänzen, es sei denn, eine solche
+ Aktualisierung umfaßt eine separate Lizenz.
+ .
+ 2. Nutzung und Beschränkungen.  Der Lizenzgeber erteilt Ihnen hiermit das
+ Recht zur Installation und Benutzung einer Kopie der WIBU-SYSTEMS Software
+ auf mehreren Computern, sofern diese jeweils mit einer WibuKey-Hardware,
+ CodeMeter-Hardware oder einer CodeMeterAct-Lizenz genutzt wird. Die
+ Software darf nur Firm Codes verwendet werden, für die ein gesonderter
+ Lizenzvertrag zwischen WIBU-SYSTEMS und dem Lizenzgeber besteht. Andere
+ Firm Codes, wie z.B. 10 und 5010, dürfen nur für firmeninterne Tests des
+ Lizenzgebers verwendet werden. Im Rahmen dieses Lizenzvertrags ist die
+ Existenz der WIBU-SYSTEMS Software auf mehr als einem Computer gleichzeitig
+ gestattet. Ferner ist es zulässig, die WIBU-SYSTEMS Software über ein
+ Netzwerk bereitzustellen, in dem sie von mehr als einem Computer
+ gleichzeitig verwendet werden kann. Sie sind berechtigt, eine
+ maschinenlesbare Kopie der WIBU-SYSTEMS Software für Sicherungszwecke zu
+ erstellen. Sie sind verpflichtet, auf jeder Kopie der WIBU-SYSTEMS Software
+ die Urheber- und sonstigen Schutzrechtshinweise aufzunehmen, die auf dem
+ Original enthalten waren. Sie verpflichten sich, es zu unterlassen, die
+ WIBU-SYSTEMS Software zu kopieren, dekompilieren, zurückzuentwickeln oder
+ disassemblieren, modifizieren oder abgeleitete Werke der WIBU-SYSTEMS
+ Software oder Teilen davon zu erstellen, sofern dies nicht ausdrücklich im
+ Rahmen dieses Lizenzvertrags oder durch gesetzliche Vorschriften gestattet
+ ist. DIE WIBU-SYSTEMS SOFTWARE DARF NICHT VERWENDET WERDEN BEIM ODER IM
+ ZUSAMMENHANG MIT DEM BETRIEB VON KERNKRAFTANLAGEN, FLUGZEUGEN,
+ KOMMUNIKATIONSSYSTEMEN, BEI DER FLUGÜBERWACHUNG, MIT LEBENSERHALTENDEN
+ GERÄTEN ODER ANDEREN MASCHINEN; IN DERARTIGEN FÄLLEN KANN EIN FEHLER IN DER
+ WIBU-SYSTEMS SOFTWARE ZU TODESFÄLLEN, KÖRPERVERLETZUNGEN ODER
+ SCHWERWIEGENDEN SACH- UND UMWELTSCHÄDEN FÜHREN.
+ .
+ 3. Übertragung.  Es ist Ihnen nicht gestattet, die WIBU-SYSTEMS Software zu
+ vermieten, verleasen, verleihen oder Unterlizenzen für die WIBU-SYSTEMS
+ Software zu vergeben. Sie sind jedoch berechtigt, eine einmalige,
+ permanente Übertragung aller Ihrer Lizenzrechte an der WIBU-SYSTEMS
+ Software an einen Dritten vorzunehmen, vorausgesetzt: (a) die Übertragung
+ umfaßt die komplette WIBU-SYSTEMS Software, einschließlich aller
+ Komponenten, Originalmedien, gedruckten Materialien und diesen
+ Lizenzvertrag; (b) Sie behalten keine Kopie der WIBU-SYSTEMS Software oder
+ von Teilen der WIBU-SYSTEMS Software, einschließlich der Kopien, die sich
+ auf einem Computer oder einem anderen Massenspeichergerät befinden; und
+ (c) die Partei, die die WIBU-SYSTEMS Software erhält, liest und akzeptiert
+ die Bestimmungen dieses Lizenzvertrags. Nicht für den Wiederverkauf
+ vorgesehene Kopien: Unbeschadet anderer Abschnitte in dieser Lizenz darf
+ die benannte oder Ihnen auf andere Weise im Rahmen einer Werbeaktion
+ bereitgestellte WIBU-SYSTEMS Software nur zu Demo-, Test- und
+ Bewertungszwecken verwendet werden. Der Wiederverkauf oder die Übertragung
+ dieser Software ist nicht zulässig.
+ .
+ 4. Laufzeit.  Dieser Lizenzvertrag hat bis zu seiner Beendigung Gültigkeit.
+ Ihre Rechte im Rahmen dieses Lizenzvertrags enden automatisch ohne
+ Mitteilung seitens WIBU-SYSTEMS, wenn Sie gegen eine oder mehrere
+ Bestimmungen dieses Lizenzvertrags verstoßen. Bei Beendigung dieses
+ Lizenzvertrags sind Sie verpflichtet, die Nutzung der WIBU-SYSTEMS Software
+ einzustellen und alle in Ihrem Besitz befindlichen Kopien der WIBU-SYSTEMS
+ Software oder von Teilen derselben zu zerstören.
+ .
+ 5. Eingeschränkte Gewährleistung für Datenträger.  Für einen Zeitraum von
+ neunzig (90) Tagen ab dem Datum des Originalkaufs übernimmt WIBU-SYSTEMS
+ die Gewährleistung dafür, dass die Datenträger, auf denen die WIBU-SYSTEMS
+ Software gespeichert und von WIBU-SYSTEMS bereitgestellt wird, bei normaler
+ Verwendung frei von Material- und Herstellungsfehlern sind. Ihr
+ ausschließliches Rechtsmittel im Rahmen dieses Absatzes ist nach Ermessen
+ von WIBU-SYSTEMS eine Rückerstattung des Kaufpreises des Produkts, das die
+ WIBU-SYSTEMS Software umfaßt, oder ein Ersatz der WIBU-SYSTEMS Software,
+ die mit einer Kopie des Kaufbelegs an WIBU-SYSTEMS oder einen autorisierten
+ WIBU-SYSTEMS Händler zurückgegeben wird. DIESE EINGESCHRÄNKTE
+ GEWÄHRLEISTUNG UND JEGLICHE IMPLIZIERTEN GEWÄHRLEISTUNGEN FÜR DIE
+ DATENTRÄGER EINSCHLIESSLICH INSBESONDERE DER IMPLIZIERTEN GEWÄHRLEISTUNGEN
+ DER MARKTFÄHIGKEIT, ZUFRIEDENSTELLENDE QUALITÄT UND EIGNUNG FÜR EINEN
+ BESTIMMTEN ZWECK SIND AUF EINEN ZEITRAUM VON NEUNZIG (90) TAGEN AB DEM
+ DATUM DES ORIGINALKAUFS BESCHRÄNKT. EINIGE RECHTSORDNUNGEN LASSEN
+ BESCHRÄNKUNGEN HINSICHTLICH DER DAUER EINER IMPLIZIERTEN GEWÄHRLEISTUNG
+ NICHT ZU, SO DASS DIE OBENGENANNTE EINSCHRÄNKUNG FÜR SIE MÖGLICHERWEISE
+ NICHT ZUTRIFFT. DIE HIERIN FESTGELEGTE EINGESCHRÄNKTE GEWÄHRLEISTUNG STELLT
+ DIE EINZIGE GEWÄHRLEISTUNG DAR, DIE IHNEN ZUSTEHT, UND TRITT AN DIE STELLE
+ JEGLICHER ANDERER GEWÄHRLEISTUNGEN (SOFERN VORHANDEN), DIE SICH AUS
+ ERKLÄRUNGEN IN DER DOKUMENTATION ODER AUF DER VERPACKUNG ERGEBEN KÖNNTEN.
+ DIESE EINGESCHRÄNKTE GEWÄHRLEISTUNG RÄUMT IHNEN BESTIMMTE RECHTE EIN,
+ MÖGLICHERWEISE STEHEN IHNEN AUCH ANDERE RECHTE ZU, DIE JE NACH
+ RECHTSORDNUNG VARIIEREN KÖNNEN.
+ .
+ 6. Gewährleistungsverzicht.  SIE BESTÄTIGEN UND ERKLÄREN SICH AUSDRÜCKLICH
+ DAMIT EINVERSTANDEN, DASS DIE VERWENDUNG DER WIBU-SYSTEMS SOFTWARE AUF IHR
+ EIGENES RISIKO ERFOLGT UND DASS SIE DAS GESAMTE RISIKO IM HINBLICK AUF
+ ZUFRIEDENSTELLENDE QUALITÄT, LEISTUNG, GENAUIGKEIT UND AUFWAND TRAGEN.
+ VORBEHALTLICH DER OBEN FESTGELEGTEN, EINGESCHRÄNKTEN GEWÄHRLEISTUNG FÜR
+ DATENTRÄGER UND DES DURCH DAS ANWENDBARE RECHT MAXIMAL ZULÄSSIGEN UMFANGS
+ WIRD DIE WIBU-SYSTEMS SOFTWARE OHNE MÄNGELGEWÄHR MIT ALLEN FEHLERN UND OHNE
+ GEWÄHRLEISTUNG JEGLICHER ART AUSGELIEFERT. WIBU-SYSTEMS UND DIE
+ WIBU-SYSTEMS LIZENZGEBER (ZUM ZWECKE DER ABSÄTZE 6 UND 7 GEMEINSAM ALS
+ "WIBU-SYSTEMS" BEZEICHNET) LEHNEN HIERMIT ALLE GEWÄHRLEISTUNGEN UND
+ BEDINGUNGEN HINSICHTLICH DER WIBU-SYSTEMS SOFTWARE AB, UND ZWAR SOWOHL
+ AUSDRÜCKLICHE, IMPLIZITE ALS AUCH GESETZLICH FESTGELEGTE GEWÄHRLEISTUNGEN,
+ EINSCHLIESSLICH INSBESONDERE DER IMPLIZITEN GEWÄHRLEISTUNGEN UND/ODER
+ BEDINGUNGEN DER MARKFÄHIGKEIT, ZUFRIEDENSTELLENDEN QUALITÄT, EIGNUNG FÜR
+ EINEN BESTIMMTEN ZWECK, GENAUIGKEIT, UNGESTÖRTEN BESITZ UND NICHTVERLETZUNG
+ DER RECHTE DRITTER. WIBU-SYSTEMS ÜBERNIMMT KEINE GEWÄHRLEISTUNG DAFÜR, DASS
+ DER UNGESTÖRTE BESITZ DER WIBU-SYSTEMS SOFTWARE NICHT BEEINTRÄCHTIGT WIRD,
+ DASS DIE FUNKTIONEN IN DER WIBU-SYSTEMS SOFTWARE IHRE ANFORDERUNGEN
+ ERFÜLLEN, DASS DER BETRIEB DER WIBU-SYSTEMS SOFTWARE STÖRUNGS- ODER
+ FEHLERFREI ERFOLGT ODER DASS FEHLER IN DER WIBU-SYSTEMS SOFTWARE KORRIGIERT
+ WERDEN. DIE MÜNDLICHEN ODER SCHRIFTLICHEN INFORMATIONEN ODER AUSSAGEN
+ SEITENS WIBU-SYSTEMS ODER EINES AUTORISIERTEN WIBU-SYSTEMS VERTRETERS
+ BEGRÜNDEN KEINE GEWÄHRLEISTUNG. SOLLTE SICH DIE WIBU-SYSTEMS SOFTWARE ALS
+ DEFEKT ERWEISEN, ÜBERNEHMEN SIE DIE GESAMTEN KOSTEN FÜR ALLE NOTWENDIGEN
+ SERVICELEISTUNGEN, REPARATURARBEITEN ODER KORREKTUREN. EINIGE
+ RECHTSORDNUNGEN LASSEN DEN AUSSCHLUSS IMPLIZITER GEWÄHRLEISTUNGEN ODER
+ EINSCHRÄNKUNGEN DER ANWENDBAREN, GESETZMÄSSIGEN RECHTE EINES KUNDEN NICHT
+ ZU, SO DASS DIE OBENGENANNTEN AUSSCHLÜSSE UND EINSCHRÄNKUNGEN FÜR SIE
+ MÖGLICHERWEISE NICHT ZUTREFFEN.
+ .
+ 7. Haftungsbeschränkung.  IN DEM NICHT DURCH GESETZE UNTERSAGTEN AUSMASS
+ IST WIBU-SYSTEMS IN KEINEM FALL HAFTBAR FÜR PERSONENSCHÄDEN ODER BEILÄUFIG
+ ENTSTANDENE, SPEZIELLE, INDIREKTE SCHÄDEN ODER FOLGESCHÄDEN JEGLICHER ART,
+ EINSCHLIESSLICH INSBESONDERE ENTGANGENEN GEWINNS, DES VERLUSTS VON DATEN,
+ DER GESCHÄFTSUNTERBRECHUNG ODER ANDERER KOMMERZIELLER SCHÄDEN ODER
+ VERLUSTE, DIE DURCH DIE VERWENDUNG DER WIBU-SYSTEMS SOFTWARE ODER DIE
+ UNMÖGLICHKEIT DER VERWENDUNG DER WIBU-SYSTEMS SOFTWARE ENTSTEHEN ODER
+ DAMIT ZUSAMMENHÄNGEN UND ZWAR UNABHÄNGIG VON DER RECHTSGRUNDLAGE DER
+ HAFTUNG (VERTRAG, UNERLAUBTE HANDLUNG ODER SONSTIGE) UND ZWAR AUCH DANN,
+ WENN WIBU-SYSTEMS AUF DIE MÖGLICHKEIT SOLCHER SCHÄDEN HINGEWIESEN WURDE.
+ EINIGE RECHTSORDNUNGEN LASSEN DIE BESCHRÄNKUNG DER HAFTUNG FÜR
+ PERSONENSCHÄDEN, BEILÄUFIG ENTSTANDENE SCHÄDEN ODER FOLGESCHÄDEN NICHT ZU,
+ SO DASS DIESE BESCHRÄNKUNG FÜR SIE MÖGLICHERWEISE NICHT ZUTRIFFT. In keinem
+ Fall übersteigt die gesamte Haftung von WIBU-SYSTEMS für alle Schäden
+ (ausgenommen die zwingende gesetzliche Haftung im Falle von Personenschäden
+ erforderlich) Ihnen gegenüber die Summe von fünfzig US-Dollar ($ 50,00).
+ Die vorgenannten Beschränkungen gelten auch dann, wenn das obengenannte
+ Rechtsmittel seinen eigentlichen Zweck nicht erfüllt.
+ .
+ 8. Export.  Sie stehen dafür ein, daß die WIBU-SYSTEMS Software nur unter
+ Beachtung aller anwendbaren Exportbestimmungen des Landes, in dem Sie die
+ WIBU-SYSTEMS Software erhalten haben, und der Vereinigten Staaten von
+ Amerika ausgeführt wird. Insbesondere darf die WIBU-SYSTEMS Software nicht
+ (i) in ein Land exportiert oder reexportiert werden, über das die
+ Vereinigten Staaten ein Embargo verhängt haben (derzeit Kuba, Iran, Irak,
+ Libyen, Nordkorea, Sudan und Syrien), oder einem Staatsangehörigen oder
+ Bewohner eines solchen Landes überlassen werden oder (ii) einer Person
+ überlassen werden, die auf der Liste der Specially Designated Nationals des
+ U.S. Treasury Department oder der Denied Person's List oder Entity List des
+ U.S. Department of Commerce verzeichnet sind. Indem Sie die WIBU-SYSTEMS
+ Software benutzen, erklären Sie, daß Sie weder in einem dieser Länder
+ wohnhaft sind noch seiner Kontrolle unterliegen noch ein Staatsangehöriger
+ oder Bewohner eines dieser Länder sind noch auf einer der vorstehend
+ erwähnten Listen genannt werden.
+ .
+ 9. US-Behörden. Die Software und die Dokumentation gelten als "Commercial
+ Items" gemäß Definition im 48 C.F.R. §2.101, bestehend aus "Commercial
+ Computer Software" und "Commercial Computer Software Documentation" in dem
+ Sinne, in dem diese Begriffe im 48 C.F.R. §12.212 oder 48 C.F.R. §227.7202
+ verwendet werden, sofern anwendbar. In Übereinstimmung mit 48 C.F.R.
+ §12.212 oder 48 C.F.R. §227.7202-1 bis 227.7202-4, sofern anwendbar, werden
+ die "Commercial Computer Software" und die "Commercial Computer Software
+ Documentation" an US-Behörden wie folgt lizenziert: (a) nur als "Commercial
+ Items" und (b) nur mit den Rechten, die allen Endbenutzern gemäß den
+ Bestimmungen in diesem Lizenzvertrag gewährt werden. Die Rechte an
+ unveröffentlichten Werken unterliegen den Urheberrechten der Vereinigten
+ Staaten und der Bundesrepublik Deutschland.
+ .
+ 10. Anwendbares Recht und Teilnichtigkeit.  Dieser Lizenzvertrag unterliegt
+ dem Recht der Bundesrepublik Deutschland. Dieser Lizenzvertrag unterliegt
+ nicht der United Nations Convention on Contracts for the International Sale
+ of Goods, deren Anwendung hiermit ausdrücklich ausgeschlossen wird. Die
+ Unwirksamkeit einzelner Bestimmungen dieses Lizenzvertrags berührt die
+ Wirksamkeit des Vertrages im übrigen nicht.
+ .
+ 11. Vollständigkeit.  Dieser Lizenzvertrag enthält die gesamte Vereinbarung
+ zwischen den Parteien in Bezug auf die im Rahmen dieses Vertrags
+ lizenzierte WIBU-SYSTEMS Software und tritt an die Stelle aller
+ diesbezüglichen früheren mündlichen oder schriftlichen Vereinbarungen.
+ Änderungen und Ergänzungen dieses Vertrages sind schriftlich niederzulegen.
+ Jegliche Übersetzung dieses Lizenzvertrags wird für lokale Zwecke
+ angefertigt. Im Falle von Unstimmigkeiten zwischen der deutschen und der
+ nicht deutschen Version hat die deutsche Version dieses Lizenzvertrags
+ Gültigkeit.
+ .
+ Karlsruhe, Deutschland, Juli 2012

@@ -1,0 +1,24 @@
+# bash completion for cmu
+#
+# Copyright (C) 2015 WIBU SYSTEMS
+
+_cmu () {
+	local cur prev words cword opts
+	_init_completion -n : || return
+	
+	_quote_readline_by_ref "$cur" cur
+	
+	opts="$(cmu --help | sed -n 's/^[[:space:]]*\(--[a-z-]*\).*$/\1/p' | sort -u | tr '\n' ' ')"
+	file_opts="$(cmu --help | sed -n 's/^[[:space:]]*\(--[a-z-]*\).*$/\1/p' | sort -u | grep "file" | tr '\n' ' ')"
+	file_opts="-f $file_opts"
+
+	if [[ $file_opts =~ $prev  ]]; then
+	    _filedir
+	else
+	    COMPREPLY=( $(compgen -W "$opts" -- "$cur") )
+	fi
+
+	return 0
+} && complete -F _cmu cmu
+
+# vim:ft=sh sw=8 ts=8 noet:

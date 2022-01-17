@@ -1,0 +1,67 @@
+ *
+============================================================================
+ *
+ * Copyright  2003-2021 by WIBU-SYSTEMS AG
+ *            Rueppurrer Strasse 52-54, 76137 Karlsruhe, Germany
+ *            Website: http://www.wibu.com, eMail: info@wibu.com
+ *            Phone: +49-721-93172-0, Fax: +49-721-93172-22
+ *            All rights reserved.
+ *
+ * Version .. 7.30
+ * Project .. CodeMeter (CodeMeter Runtime Kit for Linux)
+ * System ... Linux
+ * Tools .... GNU/Linux
+
+
+General Information
+===================
+
+CodeMeter version 7.30. 
+ 
+CodeMeter is the technology of Wibu-Systems providing secure protection 
+and effective license management of software and digital content.
+Products from Wibu-Systems support virtually all operating systems and come 
+in a broad variety of form factors. CmDongle represents the hardware-based 
+and CmActLicense the completely software-based variant of CodeMeter. 
+Protected digital content includes desktop PC, server, embedded system, 
+mobile, smart phone, and cloud computing environments. 
+                                                                                
+Distributions
+=============
+
+Currently, CodeMeter supports RPM and DEB based Linux distributions.
+The installation packages support the i386 and x86_64 architectures only.
+If you require support for the PowerPC or ARM architecture, please
+contact Wibu-Systems support by e-mail at support@wibu.com.
+
+For a list of supported distributions refer to the Release List 
+at <http://www.wibu.com/en/downloads-user-software/downloads/>
+
+
+
+Installation
+============
+
+For installing and configuring CodeMeter, please refer to the relevant sections in the
+separate online CodeMeter User Help.
+
+
+News
+====
+
+Please find the latest CodeMeter changelogs at 
+http://www.wibu.com/downloads-user-software.html and the latest version
+at http://codemeter.de/us/service/downloads_linux.html.
+
+
+Additional Documentation and Help
+=================================
+
+Extensive FAQ's about CodeMeter are available at 
+http://www.wibu.com/faq-codemeter.html and http://support.codemeter.com. 
+
+The latest version of the CodeMeter Runtime Kit can be downloaded from 
+at http://codemeter.de/us/service/downloads_linux.html.
+
+If you have questions on CodeMeter or Wibu-Systems, please feel free 
+to contact us by sending an e-mail to support@wibu.com.

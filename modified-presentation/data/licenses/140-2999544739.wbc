@@ -1,0 +1,21 @@
+[WIBU-SYSTEMS Control File]
+Guid={0002000A-0000-1100-8005-0000C06B5161}
+Description=CmCloud Credentials file
+Version=1.00
+Encoding=UTF-8
+
+[Info]
+CreationTime=2021-04-28 11:02:28
+TimeStamp=1619600548
+CredentialsSize=115
+CredentialInfoSize=82
+
+[Credentials]
+8VfsEkn4Yj/R3vPI2BVTIO7Rg03SXkDfsm3Mt1V6wfaBG+G/Uo8jhQYGiNYMRo50sN4Oj0M+LwM+Gh5vslFxAdoklBCXgkMoFhWV
+eDnCWafTYrI9JblxC0jAYpjgeCB5ZlBOtqtu9/xjxzqHU2Z4Yjc3Cg
+
+[CredentialInfo]
+HardwareId=8c00f2bc3f4c330ea6059315c37b59aecc1c3b0b
+CmActId=30WV
+FirmCode=6000010
+

@@ -1,0 +1,58 @@
+version: '3.3'
+services:
+
+  codemeter:
+    image: customer/codemeter
+    container_name: codemeter
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    restart: always
+    networks:
+      - codemeter_network 
+    environment: 
+      LICENSE_SERVER: 123.123.123.123
+      
+  codemeter_webadmin:
+    image: customer/codemeter
+    container_name: codemeter_webadmin
+    command: --webadmin
+    depends_on:
+      - codemeter
+    restart: always
+    ports:
+      - "23080:22352"
+      - "23443:22353"
+    environment:
+      CODEMETER_HOST: codemeter
+    networks:
+      - codemeter_network
+
+  license:
+    image: customer/license
+    build:
+      context: .
+      dockerfile: Dockerfile.license
+    depends_on:
+      - codemeter
+    environment:
+      CODEMETER_HOST: codemeter
+    networks:
+      - codemeter_network
+
+
+  application:
+      image: customer/application
+      build:
+        context: .
+        dockerfile: Dockerfile.app
+      depends_on:
+      - codemeter
+      - license
+      environment:
+        CODEMETER_HOST: codemeter 
+      networks:
+        - codemeter_network
+
+networks:
+  codemeter_network: 

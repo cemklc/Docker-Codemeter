@@ -1,0 +1,11 @@
+[Unit]
+Description=CodeMeter RunTime Server
+After=network.target
+
+[Service]
+User=daemon
+ExecStart=/usr/sbin/CodeMeterLin -f
+ExecReload=/bin/kill -USR1 $MAINPID
+
+[Install]
+WantedBy=multi-user.target

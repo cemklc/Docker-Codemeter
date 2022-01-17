@@ -1,0 +1,10 @@
+[Unit]
+Description=CodeMeter WebAdmin
+After=codemeter.service
+
+[Service]
+User=daemon
+ExecStart=/usr/sbin/CmWebAdmin
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,27 @@
+FROM  bitnami/minideb:jessie
+
+LABEL description="Customer License base image"
+
+# set defautl license.
+ENV LICENSE_PATH /licenses
+
+ARG USE_HTTP_PROXY
+ARG USE_HTTPS_PROXY
+
+# set proxy settings
+ENV http_proxy $USE_HTTP_PROXY
+ENV https_proxy $USE_HTTPS_PROXY
+
+# install needed components, needed for cmu
+RUN install_packages libusb-1.0-0
+
+# copy bin files
+COPY deb/CodeMeter/usr/bin/cmu /usr/bin/cmu
+COPY deb/CodeMeter/usr/lib /usr/lib
+
+COPY lbase.sh /lbase.sh
+RUN sed -i 's/\r$//' /lbase.sh
+RUN ["chmod", "+x", "/lbase.sh"]
+ENTRYPOINT [ "/lbase.sh" ]
+
+CMD ["--install"]

@@ -1,0 +1,10 @@
+FROM  bitnami/minideb:jessie
+
+LABEL description="Customer base application image"
+
+# copy needed wibucm libraries
+COPY deb/CodeMeter/usr/lib /usr/lib
+
+# copy needed xpm libraries
+COPY deb/AxProtector/usr/lib /usr/lib
+
