@@ -1,5 +1,8 @@
 version: '3.3'
+
 services:
+
+
 
   codemeter:
     image: customer/codemeter
@@ -9,7 +12,7 @@ services:
       dockerfile: Dockerfile.server
     restart: always
     networks:
-      - codemeter_network 
+      - codemeter_network
     environment: 
       LICENSE_SERVER: 123.123.123.123
       
@@ -40,7 +43,6 @@ services:
     networks:
       - codemeter_network
 
-
   application:
       image: customer/application
       build:
@@ -53,6 +55,18 @@ services:
         CODEMETER_HOST: codemeter 
       networks:
         - codemeter_network
+
+  test:
+    image: sinecnotinstalled
+#    build:
+#      context: .
+#      dockerfile: Dockerfile.license
+    depends_on:
+      - codemeter
+    environment:
+      CODEMETER_HOST: codemeter
+    networks:
+      - codemeter_network
 
 networks:
   codemeter_network: 
