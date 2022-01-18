@@ -1,0 +1,71 @@
+FROM  ubuntu:18.04
+
+LABEL description="Customer CodeMeter image"
+
+ARG USE_HTTP_PROXY
+ARG USE_HTTPS_PROXY
+
+# set proxy settings
+ENV http_proxy $USE_HTTP_PROXY
+ENV https_proxy $USE_HTTPS_PROXY
+
+# install needed components
+RUN apt-get -y update
+RUN apt-get -y upgrade
+RUN apt-get install -y python
+RUN apt-get install -y libusb-1.0-0 libcurl3 libcap2-bin libglib2.0-0 libpcap0.8
+
+#copy systemctl
+COPY files/docker/systemctl.py /usr/bin/systemctl
+
+# copy sinecins installation folder
+COPY SINECINS_V1.0.1 /
+
+RUN dpkg -i /deb/codemeter-lite_7.40.4990.500_amd64.deb
+
+# copy bin files
+COPY deb/CodeMeter/usr/bin /usr/bin
+COPY deb/CodeMeter/usr/lib /usr/lib
+COPY deb/CodeMeter/usr/sbin /usr/sbin
+
+# copy a preconfigured Server.ini
+COPY data/etc/Server.ini /etc/wibu/CodeMeter/Server.ini
+
+# copy var files
+COPY deb/CodeMeter/var /var
+
+COPY deb/CodeMeter/var /var
+
+# declare commucation ports
+EXPOSE 22350
+EXPOSE 22351
+EXPOSE 22352
+EXPOSE 22353
+EXPOSE 5053
+EXPOSE 80
+EXPOSE 443
+EXPOSE 0
+
+RUN mkdir /opt/sinecins
+COPY /sinecins /opt/sinecins/
+
+# Add anonymous VOLUMEs to efficient store changed data
+VOLUME  ["/var/log/CodeMeter"]
+
+# Run CodeMeter install command
+RUN /usr/sbin/CodeMeterLin -x ; exit 0
+
+# Copy control scripts
+COPY entrypoint.sh /entrypoint.sh
+RUN sed -i 's/\r$//' /entrypoint.sh
+RUN ["chmod", "+x", "/entrypoint.sh"]
+
+# it returns error code and makes the build fail. but it is needed for some ownership and dependency issues, 
+# for now exec -it bash to the container and manually run this
+#RUN ./install.sh
+
+ENTRYPOINT [ "/entrypoint.sh" ]
+
+#ENTRYPOINT [ "echo", "Hello World" ]
+# Run default command
+# CMD ["--server bash"]
